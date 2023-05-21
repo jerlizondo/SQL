@@ -1,0 +1,32 @@
+CREATE TABLE jonas_store ( ID integer primary key, kind text, brand text, size text, price integer);
+
+INSERT INTO jonas_store VALUES ( 1, "tshirt", "polo", "L" , 7);
+INSERT INTO jonas_store Values (2, "tshirt", "polo", "M" , 5);
+INSERT INTO jonas_store VALUES (3,"tshirt", "polo", "S" ,10);
+
+INSERT INTO jonas_store VALUES (4,"Shorts", "Old Navy", "L" ,12);
+INSERT INTO jonas_store VALUES (5,"Shorts", "Old Navy", "M" ,7);
+
+INSERT INTO jonas_store VALUES (6,"Shorts", "Old Navy", "S" ,4);
+
+INSERT INTO jonas_store VALUES (7,"Jeans", "Old Navy", "L" ,23);
+
+INSERT INTO jonas_store VALUES (8,"Jeans", "Old Navy", "M" ,7);
+
+INSERT INTO jonas_store VALUES (9,"Jeans", "Old Navy", "S" ,3);
+
+INSERT INTO jonas_store VALUES (10,"Jacket", "Supreme", "L" ,6);
+
+INSERT INTO jonas_store VALUES (11,"Jacket", "Supreme", "M" ,30);
+
+INSERT INTO jonas_store VALUES (12,"Jacket", "Supreme", "L" ,7);
+
+INSERT INTO jonas_store VALUES (13,"Jacket", "Supreme", "S" ,6);
+
+INSERT INTO jonas_store VALUES (14,"Cargos", "Supreme", "M" ,4);
+
+INSERT INTO jonas_store VALUES (15,"Cargos", "Supreme", "S" ,9);
+
+Select * from jonas_store Order by Price;
+
+Select Max(Price) from jonas_Store;
